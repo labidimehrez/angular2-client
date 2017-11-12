@@ -1,0 +1,50 @@
+<p [ngClass]="{ card: true, dark: false, flat: flat }">
+  Liste des heores:
+</p>
+
+<mat-form-field class="example-full-width">
+      <input matInput placeholder="Favorite hero" [(ngModel)]="term">
+</mat-form-field>
+
+<table class="table" appMydirective>
+  <tr>
+      <td>Id</td>
+      <td>Name</td>
+  </tr>
+  <tr *ngFor="let h of HEROES | appPipe:term">
+    
+          <td  *ngIf="h.name!='Batman'">
+              {{h.id}}
+          </td>
+          <td  *ngIf="h.name!='Batman'">
+              {{h.name}}
+          </td>
+      
+      
+  </tr>
+</table>
+<h2>List des articles</h2>
+<table class="table">
+  <tr>
+      <td>Id</td>
+      <td>title</td>
+      <td>description</td>
+  </tr>
+  <tr *ngFor="let h of result">
+    
+          <td  >
+              {{h.id}}
+          </td>
+          <td >
+              {{h.title}}
+          </td>
+          <td >
+              {{h.body}}
+          </td>
+      
+      
+  </tr>
+</table>
+
+
+

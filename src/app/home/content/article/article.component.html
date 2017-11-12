@@ -1,0 +1,17 @@
+<div class="example-container">
+    <mat-form-field>
+        <input matInput placeholder="Enter the name of articel"  [(ngModel)]="articleName" required>
+      </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter the price of article"  [(ngModel)]="priceArticel" required>
+      </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter the detail of article"  [(ngModel)]="detailArticle" required>
+      </mat-form-field>
+
+      
+      
+
+</div>
+<input type="button" class="btn btn-success" value="submit" (click)="submit()">
+<input type="reset" class="btn btn-danger" value="Reset" (click)="reset()">

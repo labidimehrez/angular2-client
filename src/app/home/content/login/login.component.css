@@ -1,0 +1,17 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    border:5px solid #2c9efc;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 20%;
+  }
+  
+  .example-container > * {
+    width: 100%;
+    padding:10px;
+  }
+  .mat-fab.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+    background-color: #2c9efc !important;
+}
